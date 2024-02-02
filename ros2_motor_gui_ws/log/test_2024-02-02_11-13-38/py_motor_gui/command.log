@@ -1,0 +1,2 @@
+Invoking command in '/home/teo/ros2_motor_gui_ws/build/py_motor_gui': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+Invoked command in '/home/teo/ros2_motor_gui_ws/build/py_motor_gui' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

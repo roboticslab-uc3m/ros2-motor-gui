@@ -1,0 +1,3 @@
+[console_scripts]
+motorGui = py_motor_gui.motorGuiLogic:main
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="py_motor_gui.pep257"
+  tests="4"
+  errors="0"
+  failures="0"
+  time="0.093"
+>
+  <testcase
+    name="./setup.py"
+    classname="py_motor_gui.pep257"/>
+  <testcase
+    name="./src/motorGuiLogic.py"
+    classname="py_motor_gui.pep257"/>
+  <testcase
+    name="./src/motorGuiNode.py"
+    classname="py_motor_gui.pep257"/>
+  <testcase
+    name="./src/motorGuiWindow.py"
+    classname="py_motor_gui.pep257"/>
+  <system-out>Checked files:
+* ./setup.py
+* ./src/motorGuiLogic.py
+* ./src/motorGuiNode.py
+* ./src/motorGuiWindow.py</system-out>
+</testsuite>

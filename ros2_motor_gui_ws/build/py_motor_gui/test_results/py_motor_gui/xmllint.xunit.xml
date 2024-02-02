@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="py_motor_gui.xmllint"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.747"
+>
+  <testcase
+    name="package.xml"
+    classname="py_motor_gui.xmllint"/>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

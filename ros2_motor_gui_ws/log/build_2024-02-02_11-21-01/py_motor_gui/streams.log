@@ -1,0 +1,22 @@
+[0.362s] Invoking command in '/home/teo/ros2_motor_gui_ws/src/py_motor_gui': PYTHONPATH=/home/teo/ros2_motor_gui_ws/build/py_motor_gui/prefix_override:/home/teo/ros2_motor_gui_ws/install/py_motor_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_motor_gui build --build-base /home/teo/ros2_motor_gui_ws/build/py_motor_gui/build install --record /home/teo/ros2_motor_gui_ws/build/py_motor_gui/install.log --single-version-externally-managed
+[0.504s] running egg_info
+[0.506s] writing ../../build/py_motor_gui/py_motor_gui.egg-info/PKG-INFO
+[0.506s] writing dependency_links to ../../build/py_motor_gui/py_motor_gui.egg-info/dependency_links.txt
+[0.508s] writing entry points to ../../build/py_motor_gui/py_motor_gui.egg-info/entry_points.txt
+[0.509s] writing requirements to ../../build/py_motor_gui/py_motor_gui.egg-info/requires.txt
+[0.509s] writing top-level names to ../../build/py_motor_gui/py_motor_gui.egg-info/top_level.txt
+[0.513s] reading manifest file '../../build/py_motor_gui/py_motor_gui.egg-info/SOURCES.txt'
+[0.514s] adding license file 'LICENSE'
+[0.515s] writing manifest file '../../build/py_motor_gui/py_motor_gui.egg-info/SOURCES.txt'
+[0.515s] running build
+[0.515s] running build_py
+[0.516s] running install
+[0.516s] running install_lib
+[0.519s] running install_data
+[0.520s] running install_egg_info
+[0.524s] removing '/home/teo/ros2_motor_gui_ws/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info' (and everything under it)
+[0.524s] Copying ../../build/py_motor_gui/py_motor_gui.egg-info to /home/teo/ros2_motor_gui_ws/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info
+[0.525s] running install_scripts
+[0.537s] Installing motorGui script to /home/teo/ros2_motor_gui_ws/install/py_motor_gui/lib/py_motor_gui
+[0.537s] writing list of installed files to '/home/teo/ros2_motor_gui_ws/build/py_motor_gui/install.log'
+[0.554s] Invoked command in '/home/teo/ros2_motor_gui_ws/src/py_motor_gui' returned '0': PYTHONPATH=/home/teo/ros2_motor_gui_ws/build/py_motor_gui/prefix_override:/home/teo/ros2_motor_gui_ws/install/py_motor_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_motor_gui build --build-base /home/teo/ros2_motor_gui_ws/build/py_motor_gui/build install --record /home/teo/ros2_motor_gui_ws/build/py_motor_gui/install.log --single-version-externally-managed

@@ -1,0 +1,1 @@
+/home/teo/ros2_motor_gui_ws/build/py_motor_gui/ament_cmake_core/py_motor_guiConfig.cmake

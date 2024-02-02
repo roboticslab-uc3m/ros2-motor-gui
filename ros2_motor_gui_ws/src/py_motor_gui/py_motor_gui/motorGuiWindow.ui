@@ -1,0 +1,4380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1092</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="fullController_tab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1091</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="head_tab">
+    <attribute name="title">
+     <string>/head</string>
+    </attribute>
+    <widget class="QGroupBox" name="headAxialNeck_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialNeck</string>
+     </property>
+     <widget class="QSlider" name="positionAxialNeck_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityAxialNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityAxialNeck_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialNeck_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialNeck_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="headFrontalNeck_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalNeck</string>
+     </property>
+     <widget class="QLabel" name="positionFrontalNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalNeck_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalNeck_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalNeck_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalNeck_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalNeck_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rightArm_tab">
+    <attribute name="title">
+     <string>/rightArm</string>
+    </attribute>
+    <widget class="QGroupBox" name="frontalRightShoulder_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalRightShoulder</string>
+     </property>
+     <widget class="QLabel" name="velocityFrontalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalRightShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalRightShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalRightShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalRightShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="sagittalRightShoulder_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>SagittalRightShoulder</string>
+     </property>
+     <widget class="QLabel" name="velocitySagittalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionSagittalRightShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocitySagittalRightShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionSagittalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueSagittalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueSagittalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueSagittalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderSagittalRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderSagittalRightShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueSagittalRightShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialRightShoulder_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialRightShoulder</string>
+     </property>
+     <widget class="QLabel" name="velocityAxialRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionAxialRightShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityAxialRightShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialRightShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialRightShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialRightShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalRightElbow_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalRightElbow</string>
+     </property>
+     <widget class="QLabel" name="velocityFrontalRightElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalRightElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalRightElbow_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalRightElbow_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalRightElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalRightElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalRightElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalRightElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalRightElbow_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalRightElbow_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialRightWrist_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialRightWrist</string>
+     </property>
+     <widget class="QLabel" name="velocityAxialRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionAxialRightWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityAxialRightWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialRightWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialRightWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalRightWrist_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalRightWrist</string>
+     </property>
+     <widget class="QLabel" name="velocityFrontalRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalRightWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalRightWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalRightWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalRightWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalRightWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="leftArm_tab">
+    <attribute name="title">
+     <string>/leftArm</string>
+    </attribute>
+    <widget class="QGroupBox" name="sagittalLeftShoulder_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>SagittalLeftShoulder</string>
+     </property>
+     <widget class="QLabel" name="positionSagittalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocitySagittalLeftShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocitySagittalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionSagittalLeftShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueSagittalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueSagittalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderSagittalLeftShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueSagittalLeftShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderSagittalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueSagittalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalLeftWrist_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalLeftWrist</string>
+     </property>
+     <widget class="QSlider" name="positionFrontalLeftWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalLeftWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalLeftWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalLeftWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialLeftShoulder_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialLeftShoulder</string>
+     </property>
+     <widget class="QSlider" name="positionAxialLeftShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityAxialLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityAxialLeftShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialLeftShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialLeftShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalLeftShoulder_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalLeftShoulder</string>
+     </property>
+     <widget class="QSlider" name="positionFrontalLeftShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalLeftShoulder_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalLeftShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalLeftShoulder_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalLeftShoulder_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalLeftElbow_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalLeftElbow</string>
+     </property>
+     <widget class="QSlider" name="positionFrontalLeftElbow_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalLeftElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalLeftElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalLeftElbow_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalLeftElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalLeftElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalLeftElbow_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalLeftElbow_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalLeftElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalLeftElbow_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialLeftWrist_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialLeftWrist</string>
+     </property>
+     <widget class="QSlider" name="positionAxialLeftWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityAxialLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityAxialLeftWrist_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialLeftWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialLeftWrist_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialLeftWrist_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="trunk_tab">
+    <attribute name="title">
+     <string>/trunk</string>
+    </attribute>
+    <widget class="QGroupBox" name="frontalTrunk_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalTrunk</string>
+     </property>
+     <widget class="QSlider" name="velocityFrontalTrunk_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalTrunk_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalTrunk_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalTrunk_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialTrunk_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialTrunk</string>
+     </property>
+     <widget class="QSlider" name="velocityAxialTrunk_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionAxialTrunk_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityAxialTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialTrunk_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialTrunk_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialTrunk_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="rightLeg_tab">
+    <attribute name="title">
+     <string>/rightLeg</string>
+    </attribute>
+    <widget class="QGroupBox" name="frontalRightAnkle_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalRightAnkle</string>
+     </property>
+     <widget class="QSlider" name="velocityFrontalRightAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalRightAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalRightAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalRightAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="sagittalRightAnkle_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>SagittalRightAnkle</string>
+     </property>
+     <widget class="QSlider" name="velocitySagittalRightAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocitySagittalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionSagittalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionSagittalRightAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueSagittalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueSagittalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderSagittalRightAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueSagittalRightAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderSagittalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueSagittalRightAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="sagittalRightHip_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>SagittalRightHip</string>
+     </property>
+     <widget class="QSlider" name="velocitySagittalRightHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionSagittalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocitySagittalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionSagittalRightHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueSagittalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueSagittalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderSagittalRightHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueSagittalRightHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderSagittalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueSagittalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalRightHip_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalRightHip</string>
+     </property>
+     <widget class="QSlider" name="velocityFrontalRightHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalRightHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalRightHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalRightHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalRightKnee_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalRightKnee</string>
+     </property>
+     <widget class="QSlider" name="velocityFrontalRightKnee_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalRightKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalRightKnee_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalRightKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalRightKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalRightKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalRightKnee_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalRightKnee_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalRightKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalRightKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialRightHip_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialRightHip</string>
+     </property>
+     <widget class="QSlider" name="velocityAxialRightHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionAxialRightHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityAxialRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialRightHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialRightHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialRightHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="leftLeg_tab">
+    <attribute name="title">
+     <string>/leftLeg</string>
+    </attribute>
+    <widget class="QGroupBox" name="frontalLeftAnkle_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalLeftAnkle</string>
+     </property>
+     <widget class="QLabel" name="velocityFrontalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityFrontalLeftAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalLeftAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalLeftAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalLeftAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="axialLeftHip_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>AxialLeftHip</string>
+     </property>
+     <widget class="QSlider" name="positionAxialLeftHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocityAxialLeftHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionAxialLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityAxialLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueAxialLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueAxialLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderAxialLeftHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueAxialLeftHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderAxialLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueAxialLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalLeftHip_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalLeftHip</string>
+     </property>
+     <widget class="QSlider" name="velocityFrontalLeftHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalLeftHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalLeftHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalLeftHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="sagittalLeftHip_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>SagittalLeftHip</string>
+     </property>
+     <widget class="QSlider" name="velocitySagittalLeftHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionSagittalLeftHip_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionSagittalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocitySagittalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueSagittalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueSagittalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderSagittalLeftHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueSagittalLeftHip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderSagittalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueSagittalLeftHip_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="sagittalLeftAnkle_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>SagittalLeftAnkle</string>
+     </property>
+     <widget class="QLabel" name="velocitySagittalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="velocitySagittalLeftAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionSagittalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionSagittalLeftAnkle_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueSagittalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueSagittalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderSagittalLeftAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueSagittalLeftAnkle_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderSagittalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueSagittalLeftAnkle_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="frontalLeftKnee_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>341</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>FrontalLeftKnee</string>
+     </property>
+     <widget class="QSlider" name="velocityFrontalLeftKnee_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>93</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="positionFrontalLeftKnee_slider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>53</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>180</number>
+      </property>
+      <property name="sliderPosition">
+       <number>90</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionFrontalLeftKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityFrontalLeftKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="velocityValueFrontalLeftKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.0 radians</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="positionValueFrontalLeftKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0 degrees</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="encoderFrontalLeftKnee_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>127</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>deg</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="torqueFrontalLeftKnee_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>167</y>
+        <width>161</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="encoderFrontalLeftKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Encoder:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="torqueFrontalLeftKnee_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
