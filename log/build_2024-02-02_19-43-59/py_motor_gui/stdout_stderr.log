@@ -12,8 +12,8 @@ running install
 running install_lib
 running install_data
 running install_egg_info
-removing '/home/teo/ros2-teo-ws/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info' (and everything under it)
-Copying ../../build/py_motor_gui/py_motor_gui.egg-info to /home/teo/ros2-teo-ws/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info
+removing '/home/teo/ros2-motor-gui/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/py_motor_gui/py_motor_gui.egg-info to /home/teo/ros2-motor-gui/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info
 running install_scripts
-Installing motorGui script to /home/teo/ros2-teo-ws/install/py_motor_gui/lib/py_motor_gui
-writing list of installed files to '/home/teo/ros2-teo-ws/build/py_motor_gui/install.log'
+Installing motorGui script to /home/teo/ros2-motor-gui/install/py_motor_gui/lib/py_motor_gui
+writing list of installed files to '/home/teo/ros2-motor-gui/build/py_motor_gui/install.log'
