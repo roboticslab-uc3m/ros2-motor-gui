@@ -1,0 +1,23 @@
+running egg_info
+creating ../../build/py_motor_gui/py_motor_gui.egg-info
+writing ../../build/py_motor_gui/py_motor_gui.egg-info/PKG-INFO
+writing dependency_links to ../../build/py_motor_gui/py_motor_gui.egg-info/dependency_links.txt
+writing entry points to ../../build/py_motor_gui/py_motor_gui.egg-info/entry_points.txt
+writing requirements to ../../build/py_motor_gui/py_motor_gui.egg-info/requires.txt
+writing top-level names to ../../build/py_motor_gui/py_motor_gui.egg-info/top_level.txt
+writing manifest file '../../build/py_motor_gui/py_motor_gui.egg-info/SOURCES.txt'
+reading manifest file '../../build/py_motor_gui/py_motor_gui.egg-info/SOURCES.txt'
+writing manifest file '../../build/py_motor_gui/py_motor_gui.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/teo/ros2-teo-ws/install/py_motor_gui/share/ament_index
+creating /home/teo/ros2-teo-ws/install/py_motor_gui/share/ament_index/resource_index
+creating /home/teo/ros2-teo-ws/install/py_motor_gui/share/ament_index/resource_index/packages
+copying resource/py_motor_gui -> /home/teo/ros2-teo-ws/install/py_motor_gui/share/ament_index/resource_index/packages
+copying package.xml -> /home/teo/ros2-teo-ws/install/py_motor_gui/share/py_motor_gui
+running install_egg_info
+Copying ../../build/py_motor_gui/py_motor_gui.egg-info to /home/teo/ros2-teo-ws/install/py_motor_gui/lib/python3.10/site-packages/py_motor_gui-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motorGui script to /home/teo/ros2-teo-ws/install/py_motor_gui/lib/py_motor_gui
+writing list of installed files to '/home/teo/ros2-teo-ws/build/py_motor_gui/install.log'

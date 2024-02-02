@@ -1,9 +1,0 @@
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/uninstall.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/py_motor_gui_uninstall.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/test.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/edit_cache.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/rebuild_cache.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/list_install_components.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/install.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/install/local.dir
-/home/teo/ros2_motor_gui_ws/build/py_motor_gui/CMakeFiles/install/strip.dir
