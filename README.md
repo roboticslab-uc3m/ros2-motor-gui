@@ -1,4 +1,4 @@
-# ROS2 TEO Workspace
+# ROS2 Motor GUI
 
 ROS2 Motor GUI for TEO robot, an easy way to send basic movement commands to TEO using ROS2 through an interface.
 
