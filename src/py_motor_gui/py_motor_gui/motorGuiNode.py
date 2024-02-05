@@ -22,12 +22,12 @@ class WindowSubscriber(Node):
 
         # Create publishers for different robot parts. Each publisher will send messages to a specific topic
         # related to a part of the robot, such as head, arms, trunk, and legs. The queue size is set to 10.
-        self.head_publisher_     = self.create_publisher(Position, 'head_msgs/position', 10)
-        self.rightArm_publisher_ = self.create_publisher(Position, 'rightArm_msgs/position', 10)
-        self.leftArm_publisher_  = self.create_publisher(Position, 'leftArm_msgs/position', 10)
-        self.trunk_publisher_    = self.create_publisher(Position, 'trunk_msgs/position', 10)
-        self.rightLeg_publisher_ = self.create_publisher(Position, 'rightLeg_msgs/position', 10)
-        self.leftLeg_publisher_  = self.create_publisher(Position, 'leftLeg_msgs/position', 10)
+        self.head_publisher_     = self.create_publisher(Position, '/teoSim/head/position', 10)
+        self.rightArm_publisher_ = self.create_publisher(Position, '/teoSim/rightArm/position', 10)
+        self.leftArm_publisher_  = self.create_publisher(Position, '/teoSim/leftArm/position', 10)
+        self.trunk_publisher_    = self.create_publisher(Position, '/teoSim/trunk/position', 10)
+        self.rightLeg_publisher_ = self.create_publisher(Position, '/teoSim/rightLeg/position', 10)
+        self.leftLeg_publisher_  = self.create_publisher(Position, '/teoSim/leftLeg/position', 10)
 
     def publishPosition(self, articulation, position, speed, extremity):
         """
@@ -67,7 +67,7 @@ def main(args=None):
     """
     Main function to initialize ROS, create the WindowSubscriber node, and spin it to keep it alive.
     """
-    
+
     rclpy.init(args=args)
     window_subscriber = WindowSubscriber()
     rclpy.spin(window_subscriber)
